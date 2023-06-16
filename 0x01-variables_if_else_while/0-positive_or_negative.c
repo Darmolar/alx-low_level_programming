@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* 
- * main - Retunr integer type
+/*
+ * main - integer type
  * Return: Always  0
  */
 int main(void)
