@@ -8,7 +8,6 @@
 int main(void)
 {
 	int n, lastDigit;
-	char message;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
