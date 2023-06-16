@@ -3,7 +3,8 @@
 #include <time.h>
 #include <string.h>
 
-/* Code to return last digit
+/**`
+ * Code to return last digit
  * Return Always 0
  */
 int main(void)
