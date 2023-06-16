@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
@@ -7,7 +8,7 @@
 int main(void)
 {
 	int n, lastDigit;
-	char message[40];
+	char message;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
