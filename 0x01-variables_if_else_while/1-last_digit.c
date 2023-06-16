@@ -6,18 +6,17 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int n, lastDigit, numLength;
+	int n, lastDigit;
 	char message;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	numLength = strlen(n);
-	lastDigit = atoi(&n[numLength - 1]);
+	lastDigit = n % 10;
 	if(lastDigit > 5)
 	{
 		message = "and is greater than 5";
 	}
-	if(lastDigit == 0)
+	else if(lastDigit == 0)
 	{
 		message = "and is 0";
 	}
