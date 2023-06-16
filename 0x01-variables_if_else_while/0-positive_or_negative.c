@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /*
- * main - integer type
- * Return: Always  0
+ * main - A program to return integer value
+ * Return: Always 0
  */
 int main(void)
 {
