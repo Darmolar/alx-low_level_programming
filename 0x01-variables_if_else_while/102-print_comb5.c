@@ -1,28 +1,46 @@
 #include <stdio.h>
+
 /**
- * main - A program to print out all alphabets
- * Return: 0 (success)
- */
+  * main - Prints 3 combination of numbers
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int i, j;
+	int c, i, k, j;
 
-	for (i = 0; i < 100; i++)
+	for (c = 48; c <= 57; c++)
 	{
-		for (j = i; j < 100; j++)
+		for (i = 48; i <= 57; i++)
 		{
-			putchar((i / 10) + '0');
-            		putchar((i % 10) + '0');
-            		putchar(' ');
-            		putchar((j / 10) + '0');
-          	 	putchar((j % 10) + '0');
+			for (k = 48; k <= 57; k++)
+			{
+				for (j = 48; j <= 57; j++)
+				{
+					if (((k + j) > (c + i) &&  k >= c) || c < k)
+					{
+						putchar(c);
+						putchar(i);
+						putchar(' ');
+						putchar(k);
+						putchar(j);
 
-            		if (i != 99 || j != 99) {
-                		putchar(',');
-                		putchar(' ');
-            		}
+					if (c + i + k + j == 227 && c == 57)
+					{
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+					}
+				}
+			}
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
