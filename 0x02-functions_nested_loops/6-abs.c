@@ -8,6 +8,6 @@
  * Return: 0
 */
 int _abs(int c)
-i{
-	return (abs(c));
+{
+	return (abs(c))i;
 }
