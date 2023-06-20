@@ -1,5 +1,6 @@
-#include <studio.h>
 #include "main.h"
+#include <studio.h>
+
 /**
  *main: A program to print out _putchat 
  *
@@ -8,6 +9,6 @@
 
 int main(void)
 {
-	printf("_putchar");
+	printf("_putchar\n");
 	return (0);
 }
