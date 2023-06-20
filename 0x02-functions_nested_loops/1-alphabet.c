@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *main - A program to print out _putchat
+ * print_alphabet - A program to print out _putchat
  *Return: 0
 */
 void print_alphabet(void)
