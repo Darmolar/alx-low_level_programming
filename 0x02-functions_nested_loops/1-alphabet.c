@@ -4,7 +4,7 @@
  *main - A program to print out _putchat
  *Return: 0
 */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 
