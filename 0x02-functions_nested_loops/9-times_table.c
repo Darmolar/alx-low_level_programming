@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * times_table - A program to print out times table
@@ -7,14 +8,14 @@
 void times_table(void)
 {
 	int i;
-	int j;
+	int j, z;
 
 	for (j = 0; j < 10; j++)
 	{
 		for (i = 0; i < 10; i++)
 		{
-			_putchar('0' + (i*j));
-			_putchar(',');
+			z = i * j;
+			printf("%d, ", z);
 			_putchar(' ');
 		}
 		_putchar('\n');
