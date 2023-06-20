@@ -1,5 +1,4 @@
 #include "main.h"
-#include <studio.h>
 
 /**
  *main: A program to print out _putchat 
