@@ -4,7 +4,7 @@
 /**
  * add -  A program to print addition of tw numbers
  *@c: A chracter value
- *@d
+ *@d: A chracter value
  * Return: 0
 */
 int add(int c, int d)
