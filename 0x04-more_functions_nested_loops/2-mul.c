@@ -5,7 +5,7 @@
  * @a: an integer value
  * @b: an integer value
  *
- * Return multiple
+ * Return: multiple
  */
 int mul(int a, int b)
 {
