@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-/*
+/**
  * main - a program to filter out values
  * Return: 0
  */
