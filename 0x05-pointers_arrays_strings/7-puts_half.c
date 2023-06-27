@@ -17,11 +17,12 @@ void puts_half(char *s)
 	{
 		n = (sLength - 1) / 2;
 		putchar(n);
-		return;
 	}
-	for (i = sLength / 2; i <= sLength; i++)
+	else
 	{
-		putchar(s[i]);
+		for (i = sLength / 2; i <= sLength; i++)
+		{
+			putchar(s[i]);
+		}
 	}
-	return;
 }
