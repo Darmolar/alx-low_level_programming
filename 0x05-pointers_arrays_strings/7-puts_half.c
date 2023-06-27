@@ -28,4 +28,5 @@ void puts_half(char *s)
 			putchar(s[i]);
 		}
 	}
+	putchar('\n');
 }
