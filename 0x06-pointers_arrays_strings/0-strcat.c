@@ -9,22 +9,20 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char *result;
+	char *result = dest;
 
 	while (*dest != '\0')
 	{
-		*result = *dest;
 		dest++;
-		result++;
 	}
 
 	while (*src != '\0')
 	{
-		*result = *src;
+		*dest = *src;
 		src++;
-		result++;
+		dest++;
 	}
-	*result = '\0';
+	*dest = '\0';
 	/* printf("%s", result); */
 	return (result);
 }
