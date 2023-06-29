@@ -5,7 +5,7 @@
  * *_strcat - A function to concatinate string
  * @dest: first varibale
  * @src: second variable
- * Return: result
+ * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
@@ -25,6 +25,6 @@ char *_strcat(char *dest, char *src)
 		result++;
 	}
 	*result = '\0';
-	printf("%s", result);
+	/* printf("%s", result); */
 	return (result);
 }
