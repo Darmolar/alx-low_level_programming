@@ -1,35 +1,29 @@
 #include "main.h"
-#include <stdlib.h>
-#include <string.h>
-
 /**
- * *leet - A function to print values
- * @str: a string variable
- * Return: encoded
+ * leet - encodes a string into 1337
+ * @s: input string.
+ * Return: the pointer to dest.
  */
-char *leet(char *str)
+
+char *leet(char *s)
 {
-	char *encoded = (char *) malloc(strlen(str) + 1);
-	int i = 0;
-	int j = 0;
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	while (str[i] != '\0')
+	while (*(s + count) != '\0')
 	{
-		encoded[j] = str[i];
-		if (str[i] == 'a' || str[i] == 'A')
-			encoded[j] = '4';
-		else if (str[i] == 'e' || str[i] == 'E')
-			encoded[j] = '3';
-		else if (str[i] == 'o' || str[i] == 'O')
-			encoded[j] = '0';
-		else if (str[i] == 't' || str[i] == 'T')
-			encoded[j] = '7';
-		else if (str[i] == 'l' || str[i] == 'L')
-			encoded[j] = '1';
-
-		i++;
-		j++;
+		for (i = 0; i < 5; i++)
+		{
+			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
+			{
+				*(s + count) = numbers[i];
+				break;
+			}
+		}
+		count++;
 	}
-	encoded[j] = '\0';
-	return (encoded);
+
+	return (s);
 }

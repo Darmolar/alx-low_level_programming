@@ -1,23 +1,21 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * string_toupper - A function to convert vert lower case to upper case
- * @str: A string varibale
- * Return: str
+ * string_toupper - changes all lowercase letters of a string
+ * to uppercase
+ * @s: input string.
+ * Return: the pointer to dest.
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
-	char *ptr = str;
+	int count = 0;
 
-	while (*ptr != '\0')
+	while (*(s + count) != '\0')
 	{
-		if (*ptr >= 'a' && *ptr <= 'z')
-		{
-			*ptr = *ptr - ('a' - 'A');
-		}
-		ptr++;
+		if ((*(s + count) >= 97) && (*(s + count) <= 122))
+			*(s + count) = *(s + count) - 32;
+		count++;
 	}
 
-	return (str);
+	return (s);
 }
