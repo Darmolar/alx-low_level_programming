@@ -4,7 +4,7 @@
  * *_memcpy - a function that copies memory area..
  * @dest: a pointer variabe
  * @src: a character var
- * @: an interger value
+ * @n: an interger value
  *
  * Return: a pointer to the memory area @s
  */
