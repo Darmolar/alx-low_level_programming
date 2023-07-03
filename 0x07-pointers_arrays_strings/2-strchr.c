@@ -1,11 +1,10 @@
-#include "main.h"
 #include <stdlib.h>
-
+#include "main.h"
 /**
- * *_strchr - A function to check for character
- * @s: a pointer variable
- * @c: a chracter variable
- * Return: a pointer to chracter @c
+ * _strchr - locates a character in a string
+ * @s: the string to check
+ * @c: the character we're looking for
+ * Return: a pointer to the first occurance of the character @c in the string
  * @s. Return NULL if the character isn't found
  */
 
