@@ -1,13 +1,16 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * _abs -  A program to print an absolute value
- *@c: A chracter value
- *
- * Return: 0
-*/
-int _abs(int c)
+ * _abs - computes the absolute value of an integer
+ * @n: the int to check
+ * Return: the absolute value of int
+ */
+int _abs(int n)
 {
-	return (abs(c));
+	if (n >= 0)
+	{
+		return (n);
+	}
+	return (-n);
 }
+
