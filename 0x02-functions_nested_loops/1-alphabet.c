@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet - A program to print out _putchat
- *Return: 0
+ * Return: 0
 */
 void print_alphabet(void)
 {
