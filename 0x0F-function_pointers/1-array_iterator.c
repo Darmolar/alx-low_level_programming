@@ -1,6 +1,5 @@
-#include <stdio.h>
 #include "function_pointers.h"
-
+#include <stdio.h>
 /**
  * array_iterator - an iterator function
  * @array: an pointer array
